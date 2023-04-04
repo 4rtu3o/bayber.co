@@ -9,16 +9,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* HEADER */}
 
-      {/* MAIN */}
-      <main>
-        {/* HERO */}
-        {/* ABOUT */}
-        {/* SERVICES */}
-        {/* PARTNERS */}
-        {/* CONTACT */}
-      </main>
+      {/* HERO */}
+      {/* ABOUT */}
+      {/* SERVICES */}
+      {/* PARTNERS */}
+      {/* CONTACT */}
 
       {/* FOOTER */}
     </>
