@@ -17,7 +17,7 @@ const data = [
 
 function Header() {
   return (
-    <header className="flex items-center w-full h-20 border-b border-gray-300 bg-black/40">
+    <header className="fixed z-10 flex items-center w-full h-20 border-b border-gray-400">
       <div className="container flex items-center justify-between mx-auto">
         {/* LOGO */}
         <Image src={Logo} width={100} alt="Bayber Logo" />
@@ -26,7 +26,7 @@ function Header() {
         <div className="flex items-center gap-4">
           {data.map(({ name, href }: navData) => (
             <nav key={name satisfies Key} className="text-white">
-              <ul>
+              <ul className="mx-5">
                 <li>
                   <a href={href}>{name}</a>
                 </li>

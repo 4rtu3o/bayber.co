@@ -1,10 +1,11 @@
-import Head from 'next/head';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { GetStaticProps } from 'next';
-import { useTranslation } from 'next-i18next';
+import Head from "next/head";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { GetStaticProps } from "next";
+import { useTranslation } from "next-i18next";
+import Hero from "@/components/hero";
 
 export default function Home() {
-  const { t } = useTranslation('common');
+  const { t } = useTranslation("common");
   return (
     <>
       <Head>
@@ -13,8 +14,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p></p>
-      {/* HERO */}
+          {/* HERO */}
+      <Hero/>
       {/* ABOUT */}
       {/* SERVICES */}
       {/* PARTNERS */}
@@ -28,7 +29,7 @@ export default function Home() {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale!, ['common', 'footer'])),
+      ...(await serverSideTranslations(locale!, ["common", "footer"])),
     },
   };
 };
