@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import Header from './Header';
+import Header from './header';
 
 type Props = {
   children?: ReactNode;
@@ -15,4 +15,5 @@ function Layout({ children }: Props) {
     </>
   );
 }
+
 export default Layout;
