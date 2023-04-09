@@ -18,10 +18,10 @@ const Hero = () => {
             <h2 className="text-lg font-bold uppercase">
               Flexible, Improved and Accelerated Solutions
             </h2>
-            <h1 className="font-bold text-7xl">
+            <h1 className="font-bold text-white text-7xl">
               Full Sustainable Cargo Solutions!
             </h1>
-            <p className="my-6 text-xl">
+            <p className="my-6 text-xl text-white">
               Representative logistics operator providing full range of services
               in the sphere of customs clearance and transportation worldwide.
             </p>
