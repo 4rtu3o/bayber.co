@@ -4,6 +4,7 @@ import { GetStaticProps } from 'next';
 import { useTranslation } from 'next-i18next';
 import Hero from '@/components/hero';
 import About from '@/components/about';
+import Services from '@/components/services';
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -15,11 +16,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* HERO */}
       <Hero />
       <About />
-      {/* ABOUT */}
-      {/* SERVICES */}
+      <Services />
       {/* PARTNERS */}
       {/* CONTACT */}
 
