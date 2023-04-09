@@ -3,5 +3,17 @@
 @tailwind utilities;
 
 button {
-    @apply px-5 py-3 bg-[#014458] rounded text-white;
+  @apply px-5 py-3 bg-[#014458] rounded text-white;
+}
+
+h1 {
+  @apply font-bold text-4xl text-[#1B1A1A];
+}
+
+h3 {
+  @apply font-bold text-lg;
+}
+
+p {
+  @apply text-gray-700;
 }
