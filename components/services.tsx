@@ -32,7 +32,7 @@ const serviceImages = [
 function Services() {
   return (
     <div className="container mx-auto">
-      <div>
+      <div className="flex flex-col gap-3 mb-12">
         <h3>Reliable Cargo Solutions!</h3>
         <h1>Digital Freight That Saves Your Time!</h1>
       </div>
