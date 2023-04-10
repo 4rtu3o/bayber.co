@@ -6,6 +6,7 @@ import Hero from '@/components/hero';
 import About from '@/components/about';
 import Services from '@/components/services';
 import Partners from "@/components/partners";
+import Interstitial from "@/components/interstitial";
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <Services />
       <Partners />
+      <Interstitial />
       {/* CONTACT */}
       {/* FOOTER */}
     </>

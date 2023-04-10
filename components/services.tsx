@@ -53,9 +53,12 @@ function Services() {
                 {verticalText}
               </span>
               <span className="absolute flex gap-3 text-xl font-bold text-white bottom-7 left-8">
-                {serviceName} <ChevronRightIcon className="w-5" strokeWidth={2.5}/>
+                {serviceName}{' '}
+                <ChevronRightIcon className="w-5" strokeWidth={2.5} />
               </span>
-              <span className="absolute text-5xl font-bold text-white top-7 right-7">0{i}</span>
+              <span className="absolute text-5xl font-bold text-white top-7 right-7">
+                0{i + 1}
+              </span>
             </div>
           );
         })}
