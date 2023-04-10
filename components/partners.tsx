@@ -1,6 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import CalikLogo from '@/public/clients/calik.jpg';
 import Image from 'next/image';
+
+// Images for Swiper
+import CalikLogo from '@/public/clients/calik.jpg';
+import CalikWorldLogo from '@/public/clients/clk-world-logo.jpg';
+import GapInsaatLogo from '@/public/clients/gap-insaat-logo.svg';
+import GapPazarlamaLogo from '@/public/clients/gap-pazarlama-logo.png';
+import LinasLogo from '@/public/clients/linas-logo.svg';
+import RzdLogo from '@/public/clients/rzd-logo.svg';
 
 import 'swiper/css';
 import { Autoplay, FreeMode } from 'swiper';
@@ -11,23 +18,23 @@ const clientImages = [
     companyName: 'Road Freight',
   },
   {
-    src: CalikLogo,
+    src: CalikWorldLogo,
     companyName: 'Railway Freight',
   },
   {
-    src: CalikLogo,
+    src: GapInsaatLogo,
     companyName: 'Air Freight',
   },
   {
-    src: CalikLogo,
+    src: LinasLogo,
     companyName: 'Sea Freight',
   },
   {
-    src: CalikLogo,
+    src: GapPazarlamaLogo,
     companyName: 'Sea Freight',
   },
   {
-    src: CalikLogo,
+    src: RzdLogo,
     companyName: 'Sea Freight',
   },
 ];
@@ -43,7 +50,7 @@ function Partners() {
         communications, tracking and combined with experience through integrated
         supply chain solutions!
       </p>
-      <div className="container w-2/3 mx-auto pointer-events-none select-none">
+      <div className="container w-4/5 mx-auto my-16 pointer-events-none select-none">
         <Swiper
           loop={true}
           modules={[Autoplay, FreeMode]}
@@ -51,14 +58,16 @@ function Partners() {
           slidesPerView={3}
           freeMode={true}
           autoplay={{ delay: 1, disableOnInteraction: true }}
-          speed={7000}
-          
+          speed={4000}
         >
           {clientImages.map(({ src, companyName }, i) => {
             return (
-              <SwiperSlide key={companyName}>
-                <Image src={src} alt={companyName} />
-                <span>{companyName}</span>
+              <SwiperSlide key={companyName} className="my-auto text-center">
+                <Image
+                  src={src}
+                  alt={companyName}
+                  className="object-contain max-h-14"
+                />
               </SwiperSlide>
             );
           })}
