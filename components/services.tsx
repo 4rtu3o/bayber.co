@@ -4,37 +4,39 @@ import TrainImage from '@/public/train.jpeg';
 import PlaneImage from '@/public/plane.jpeg';
 import ShipImage from '@/public/ship.jpeg';
 
+import { useTranslation } from 'next-i18next';
+
 import { ChevronRightIcon } from '@heroicons/react/24/outline';
 
-const serviceImages = [
-  {
-    src: TruckImage,
-    verticalText: 'Transportation',
-    serviceName: 'Road Freight',
-  },
-  {
-    src: TrainImage,
-    verticalText: 'Transportation',
-    serviceName: 'Railway Freight',
-  },
-  {
-    src: PlaneImage,
-    verticalText: 'Transportation',
-    serviceName: 'Air Freight',
-  },
-  {
-    src: ShipImage,
-    verticalText: 'Transportation',
-    serviceName: 'Sea Freight',
-  },
-];
-
 function Services() {
+  const { t } = useTranslation('common');
+  const serviceImages = [
+    {
+      src: TruckImage,
+      verticalText: 'Transportation',
+      serviceName: t('services.road'),
+    },
+    {
+      src: TrainImage,
+      verticalText: 'Transportation',
+      serviceName: t('services.railway'),
+    },
+    {
+      src: PlaneImage,
+      verticalText: 'Transportation',
+      serviceName: t('services.air'),
+    },
+    {
+      src: ShipImage,
+      verticalText: 'Transportation',
+      serviceName: t('services.sea'),
+    },
+  ];
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" id="services">
       <div className="flex flex-col gap-3 mb-12">
-        <h3>Reliable Cargo Solutions!</h3>
-        <h1>Digital Freight That Saves Your Time!</h1>
+        <h2 className="font-bold uppercase">{t('services.subtitle')}</h2>
+        <h1>{t('services.title')}</h1>
       </div>
       <div className="flex justify-between my-6 mb-20">
         {serviceImages.map(({ src, verticalText, serviceName }, i) => {

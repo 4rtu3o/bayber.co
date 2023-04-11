@@ -1,3 +1,67 @@
 {
-    "p": "Testing!" 
+  "common": {
+    "companyShortName": "Bayber",
+    "companyLongName": "Bayber Lojistik Ve Ticaret Limited Şirketi",
+    "requestQuoteButton": "Request a Quote",
+    "companyAddress": "Veko Giz Plaza, Maslak Mahallesi, Meydan Sokak No: 3, Kat: 3 No: 7-8, 34396 Sariyer / İstanbul / TURKIYE",
+    "companyEmail": "contact@bayber.co",
+    "companyPhone": "+905343581590"
+  },
+  "layout": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "hero": {
+    "subtitle": "Flexibility, Precision, Speed",
+    "title": "Delivering excellence, every time.",
+    "paragraph": "Our logistics company specializes in delivering goods to destinations across the globe with efficiency and reliability."
+  },
+  "about": {
+    "subtitle": "Providing A Full Range Of Transportation Services Worldwide",
+    "title": "Navigating your shipments with ease.",
+    "moreThan": "More than",
+    "successfulShipments": "Successful monthly shipments",
+    "paragraph1": "We are a company dedicated to providing efficient and reliable logistics and transportation services to businesses of all sizes. Our team of experts has years of experience in the industry and is committed to delivering superior customer service.",
+    "paragraph2": "At our company, we understand the importance of timely and accurate delivery of goods. That's why we offer a range of transportation options to meet your specific needs, including road, railway, air, and sea transportation.",
+    "listTitle1": "Speed",
+    "listParagraph1": "We perform our services swiftly and with precision",
+    "listTitle2": "Reliability",
+    "listParagraph2": "With us you can be confident in your cargo's safety."
+  },
+  "services": {
+    "subtitle": "Reliable Transportation Solutions",
+    "title": "Moving you forward, one mile at a time.",
+    "road": "Road Freight",
+    "railway": "Railway Freight",
+    "air": "Air Freight",
+    "sea": "Sea Freight"
+  },
+  "interstitial": {
+    "subtitle": "Dedicated customer teams & agile services",
+    "title": "Global Logistics Partner To World's Famous Brands!"
+  },
+  "quoteForm": {
+    "title": "Request a Quote",
+    "nameLabel": "Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "john.doe@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "+905343581590",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Please provide your best quote for transportation of construction materials (22 tent trucks, 22 MT each) from Istanbul to Berlin."
+  },
+  "contactDetails": {
+    "subtitle": "Contact Us",
+    "title": "Get in Touch With Our Experts",
+    "paragraph": "Our team of experts is available 24/7 to assist with all of your logistics and transportation needs. We pride ourselves on providing excellent customer service, and our team is always available to answer any questions or concerns you may have."
+  },
+  "footer": {
+    "description": "We look forward to the opportunity to serve you and exceed your expectations. Contact us today to learn more about our services and to request a quote.",
+    "locationLabel": "Our Location",
+    "helpLabel": "How can we help?",
+    "copyright": "© 2023 Bayber Lojistik Ve Ticaret Limited Şirketi - All Rights Reserved"
+  }
 }
