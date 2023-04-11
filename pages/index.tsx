@@ -5,8 +5,11 @@ import { useTranslation } from 'next-i18next';
 import Hero from '@/components/hero';
 import About from '@/components/about';
 import Services from '@/components/services';
-import Partners from "@/components/partners";
-import Interstitial from "@/components/interstitial";
+// import Partners from '@/components/partners';
+import Interstitial from '@/components/interstitial';
+import QuoteForm from '@/components/quote-form';
+import ContactDetails from '@/components/contact-details';
+import Footer from '@/components/layout/footer';
 
 export default function Home() {
   const { t } = useTranslation('common');
@@ -21,10 +24,11 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <Partners />
+      {/* <Partners /> */}
       <Interstitial />
-      {/* CONTACT */}
-      {/* FOOTER */}
+      <QuoteForm />
+      <ContactDetails />
+      <Footer />
     </>
   );
 }

@@ -3,7 +3,7 @@ import InterstitialImage from '@/public/interstitial.jpeg';
 
 function Interstitial() {
   return (
-    <div className="relative w-full mb-24">
+    <div className="relative w-full -z-10">
       <div className="absolute w-full h-full bg-black/30"></div>
       <Image src={InterstitialImage} alt="Interstitial Image" />
       <div className="absolute top-12 left-24 text-white w-[32rem]">

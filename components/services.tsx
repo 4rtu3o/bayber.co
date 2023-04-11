@@ -36,7 +36,7 @@ function Services() {
         <h3>Reliable Cargo Solutions!</h3>
         <h1>Digital Freight That Saves Your Time!</h1>
       </div>
-      <div className="flex justify-between my-6">
+      <div className="flex justify-between my-6 mb-20">
         {serviceImages.map(({ src, verticalText, serviceName }, i) => {
           return (
             <div
