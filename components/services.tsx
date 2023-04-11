@@ -33,17 +33,17 @@ function Services() {
     },
   ];
   return (
-    <div className="container mx-auto" id="services">
-      <div className="flex flex-col gap-3 mb-12">
+    <div className="container mx-auto mt-20 md:mt-20" id="services">
+      <div className="flex flex-col gap-3 px-8 mb-12 md:px-0">
         <h2 className="font-bold uppercase">{t('services.subtitle')}</h2>
         <h1>{t('services.title')}</h1>
       </div>
-      <div className="flex justify-between my-6 mb-20">
+      <div className="flex flex-col justify-between gap-3 my-6 mb-20 md:gap-4 md:flex-row">
         {serviceImages.map(({ src, verticalText, serviceName }, i) => {
           return (
             <div
               key={serviceName}
-              className="w-72 h-[28rem] overflow-clip relative"
+              className="w-full md:w-72 h-[28rem] overflow-clip relative"
             >
               <Image
                 src={src}
@@ -54,8 +54,8 @@ function Services() {
               <span className="absolute text-sm font-semibold text-white uppercase -rotate-90 -left-7 top-20">
                 {verticalText}
               </span>
-              <span className="absolute flex gap-3 text-xl font-bold text-white bottom-7 left-8">
-                {serviceName}{' '}
+              <span className="absolute flex gap-3 text-xl font-bold text-white md:text-sm lg:text-xl bottom-7 left-8">
+                {serviceName}
                 <ChevronRightIcon className="w-5" strokeWidth={2.5} />
               </span>
               <span className="absolute text-5xl font-bold text-white top-7 right-7">

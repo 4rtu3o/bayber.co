@@ -15,8 +15,8 @@ const Hero = () => {
             className="object-cover h-full"
           />
         </div>
-        <div className="container h-full mx-auto text-white">
-          <div className="flex gap-4 flex-col justify-center h-full w-[45rem]">
+        <div className="container h-full px-4 mx-auto text-white md:px-0">
+          <div className="flex gap-4 flex-col justify-center h-full md:w-[45rem]">
             <h2 className="text-lg font-bold uppercase">
               {t('hero.subtitle')}
             </h2>

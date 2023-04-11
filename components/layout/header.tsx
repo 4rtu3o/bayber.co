@@ -45,11 +45,11 @@ function Header() {
           : 'text-white'
       )}
     >
-      <div className="container flex items-center justify-between mx-auto">
+      <div className="container flex items-center justify-between px-4 mx-auto md:px-0">
         {/* LOGO */}
-        <Logo className={headerType} width={100} />
+        <Logo className={headerType} width={100}/>
         {/* NAV */}
-        <div className="flex items-center gap-4">
+        <div className="items-center hidden gap-4 lg:flex">
           {data.map(({ name, href }: navData) => (
             <nav key={name satisfies Key}>
               <ul className="mx-5">
