@@ -36,7 +36,7 @@ function QuoteForm() {
       });
     }
 
-    event.currentTarget.reset();
+    formRef.current?.reset;
   }
 
   const [status, setStatus] = useState<Status | null>(null);
