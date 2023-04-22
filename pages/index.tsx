@@ -42,7 +42,7 @@ export default function Home() {
       <Services />
       {/* <Partners /> */}
       <Interstitial />
-      {/* <QuoteForm /> */}
+      <QuoteForm />
       <ContactDetails />
     </>
   );

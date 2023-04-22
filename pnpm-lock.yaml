@@ -4,6 +4,9 @@ dependencies:
   '@heroicons/react':
     specifier: ^2.0.17
     version: 2.0.17(react@18.2.0)
+  '@marsidev/react-turnstile':
+    specifier: ^0.2.0
+    version: 0.2.0(react-dom@18.2.0)(react@18.2.0)
   '@types/node':
     specifier: 18.15.11
     version: 18.15.11
@@ -136,6 +139,16 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: false
+
+  /@marsidev/react-turnstile@0.2.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qnpHFk5Cyjv7pmMu+1hn+l6tzAyq6aECQj26JdcB6r0pbk1W3/7XSA5iiP9b+pMnTq0IzkQa26EU7GyERpoLDw==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@next/env@13.2.4:

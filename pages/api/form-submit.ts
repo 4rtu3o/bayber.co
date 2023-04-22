@@ -1,4 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+
 import nodemailer from 'nodemailer';
 
 export default async function handler(
@@ -6,22 +7,26 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const transporter = nodemailer.createTransport({
-    port: 465,
-    host: 'smtp.gmail.com',
+    port: 587,
+    host: 'smtp.yandex.ru',
     auth: {
-      user: 'pursatlyyorish2022@gmail.com',
-      pass: 'yorish2022',
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
     },
     //   secure: true,
   });
   const mailData = {
-    from: 'Bayber Lojistik <contact@bayber.co>',
-    to: 'contact@bayber.co',
+    from: process.env.EMAIL_FROM,
+    to: process.env.EMAIL_TO,
     subject: `Message From ${req.body.name}`,
     text: req.body.message + ' | Sent from: ' + req.body.email,
   };
-  transporter.sendMail(mailData, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
-  });
+  try {
+    transporter.sendMail(mailData, function (err, info) {
+      if (err) console.log(err);
+      else console.log(info);
+    });
+  } finally {
+    return res.status(200).send('Success!');
+  }
 }

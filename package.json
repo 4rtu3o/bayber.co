@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.17",
+    "@marsidev/react-turnstile": "^0.2.0",
     "@types/node": "18.15.11",
     "@types/nodemailer": "^6.4.7",
     "@types/react": "18.0.33",
