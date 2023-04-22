@@ -35,6 +35,8 @@ function QuoteForm() {
         body: data,
       });
     }
+
+    event.currentTarget.reset();
   }
 
   const [status, setStatus] = useState<Status | null>(null);
