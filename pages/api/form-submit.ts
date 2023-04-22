@@ -8,7 +8,7 @@ export default async function handler(
 ) {
   const transporter = nodemailer.createTransport({
     port: 587,
-    host: 'smtp.yandex.ru',
+    host: process.env.EMAIL_HOST,
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASS,
